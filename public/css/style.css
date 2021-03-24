@@ -1,11 +1,12 @@
-section { 
+section:not(:last-of-type) { 
     border-bottom: 1px solid black; 
     padding-bottom: 50px;
 }
 
-section:last-child { 
-    border-bottom: none; 
+section { 
+    padding-bottom: 50px;
 }
+
 /* début exo 01 les_hover_01 */
 .bg-color {
     height: 150px;
@@ -35,7 +36,7 @@ section:last-child {
 
 
 /* début exo 03 les_focus_03 */
-form:focus {
+.border_color:focus {
     border-color: blue solid;
     border-radius: 10px;
 }
@@ -101,7 +102,7 @@ form:focus {
 }
 
 .transition_07:active {
-    margin: 80%;
+    margin-left: 90%;
 }
 /* fin exo 07 les transitions */
 
